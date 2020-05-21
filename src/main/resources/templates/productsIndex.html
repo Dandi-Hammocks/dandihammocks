@@ -13,6 +13,7 @@
     <div th:each="product : ${products}">
         <p style="font-weight: bold;" th:text="${product.name}"></p>
         <p style="padding-left: 2rem;" th:text="${product.priceInDollars}"></p>
+        <img th:src="${product.imageUrl}" height="100px" alt="">
     </div>
 </div>
 
