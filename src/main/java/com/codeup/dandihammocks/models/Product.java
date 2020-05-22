@@ -62,6 +62,10 @@ public class Product {
         this.priceInCents = priceInCents;
     }
 
+    public double getPriceInDollars() {
+        return priceInCents / 100;
+    }
+
     public String getDescription() {
         return description;
     }
